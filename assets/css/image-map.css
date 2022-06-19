@@ -1,0 +1,54 @@
+#image-map area {
+    cursor: pointer;
+}
+
+#axome-tooltip {
+    position: absolute;
+    z-index: 10;
+}
+
+#axome-tooltip span {
+    display: inline-block;
+    max-width: 300px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #444;
+    font-family: serif;
+    font-style: italic;
+    background-color: #fff;
+    padding: 0.5em 0.8em;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.25rem;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    position: relative;
+}
+
+#axome-tooltip span p {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+ #axome-tooltip span:after,  #axome-tooltip span:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+ #axome-tooltip span:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-right-color: #fff;
+    border-width: 10px;
+    margin-top: -10px;
+}
+ #axome-tooltip span:before {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(0, 0, 0, 0.3);
+    border-width: 11px;
+    margin-top: -11px;
+}
