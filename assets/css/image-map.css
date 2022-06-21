@@ -1,5 +1,14 @@
 #image-map area {
     cursor: pointer;
+    position: relative;
+}
+
+#image-map area::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: red;
 }
 
 #axome-tooltip {
@@ -14,7 +23,7 @@
     font-weight: 700;
     text-transform: capitalize;
     color: #444;
-    font-family: serif;
+    font-family: "Times New Roman", serif;
     font-style: italic;
     background-color: #fff;
     padding: 0.5em 0.8em;
