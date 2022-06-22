@@ -1,14 +1,22 @@
-#image-map area {
-    cursor: pointer;
-    position: relative;
+@font-face {
+    font-family: times-new-roman-regular;
+    src: url(../fonts/times-new-roman.ttf);
 }
 
-#image-map area::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: red;
+@font-face {
+    font-family: times-new-roman-bold;
+    src: url(../fonts/times-new-roman-bold.ttf);
+}
+
+p.regular {
+    font-family: times-new-roman-regular;
+}
+p.bold {
+    font-family: times-new-roman-bold;
+}
+
+#image-map area {
+    cursor: pointer;
 }
 
 #axome-tooltip {
@@ -23,8 +31,7 @@
     font-weight: 700;
     text-transform: capitalize;
     color: #444;
-    font-family: "Times New Roman", serif;
-    font-style: italic;
+    font-family: times-new-roman-bold;
     background-color: #fff;
     padding: 0.5em 0.8em;
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -34,6 +41,7 @@
 }
 
 #axome-tooltip span p {
+    font-family: times-new-roman-regular;
     font-size: 1rem;
     font-weight: normal;
 }
