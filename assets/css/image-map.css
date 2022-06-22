@@ -8,13 +8,6 @@
     src: url(../fonts/times-new-roman-bold.ttf);
 }
 
-p.regular {
-    font-family: times-new-roman-regular;
-}
-p.bold {
-    font-family: times-new-roman-bold;
-}
-
 #image-map area {
     cursor: pointer;
 }
